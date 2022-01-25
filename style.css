@@ -1,0 +1,11 @@
+p{
+    color:white;
+    background:red;
+    font-style: italic;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    background: orange;
+}
