@@ -14,6 +14,7 @@ body{
 }
 header{
     position:absolute;
+    box-sizing: border-box;
     top: 0;
     left: 0;
     width: 100%;
@@ -21,9 +22,14 @@ header{
     display:flex;
     justify-content: space-between;
     align-items:center;
+    border: 4px solid;
+    
     z-index: 1000;
 }
 header .logo{
+    position: absolute;
+    top: 0;
+    left: 0;
     color: #fff;
     font-weight: 700;
     text-decoration:none;
@@ -32,9 +38,13 @@ header .logo{
     letter-spacing: 2px;
 }
 header ul{
-    display:flex;
+    display: flex;
+    width: 100vw;
+    height: auto;
+    border: 4px solid;
     justify-content: center;
     align-items:center;
+    
 
 }
 header ul li{
@@ -57,7 +67,7 @@ section{
     position: relative;
     width: 100vw;
     height: 100vh;
-    border: 4px solid;
+    
 }
 section img{
     position:absolute;
@@ -68,6 +78,7 @@ section img{
 }
 section img#Cover_photo{
     mix-blend-mode: screen;
+    
     
 }
 #welcome{
@@ -82,22 +93,33 @@ p{
     color:white;
     background:red;
     font-style: italic;
+    
 }
 
 div{
     width: 100px;
     height: 100px;
     background: orange;
+    border: 4px solid;
 }
-@media (min-width: 25px){
-    section img{
-        position:absolute;
-        top: 0;
-        left: 0;
+@media (max-width: 1000px) {
+    header{
+       
+        display:flex;
+        float: right;
     }
-    body{
-        width:100vw;
-        height: auto;
+    header .logo{
+        display: block;
     }
-
+    header .logo::after{
+        justify-content: center;
+    }
+    header ul{
+        display:block;
+        justify-content: right;
+        margin-left: 10%;
+        border: 4px solid;
+       
+    }
+    
 }
