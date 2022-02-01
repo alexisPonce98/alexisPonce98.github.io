@@ -9,6 +9,7 @@
     </head>
     <body>
         <header>
+            <span id="navButton" class="navButton" onclick="openNav()">&#9776 Open</span>
             <a href="#" class="logo">Alexis Ponce</a>
             <ul>
                 <li><a href="#" class="active">About</a></li>
@@ -16,6 +17,13 @@
                 <li><a href="#">Resume</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
+            <div id="sideNav" class="sideNav">
+                <a href="javascript:void(0)" class="closbtn" onclick="closeNav()">&times;</a>
+                <a href="#">About</a>
+                <a href="#">Projects</a>
+                <a href="#">Resume</a>
+                <a href="#">Contact</a>
+            </div>
             <script src="./script.js"></script>
         </header>
         <section>

@@ -18,7 +18,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
+    /* padding: 30px 100px; */
     display:flex;
     justify-content: space-between;
     align-items:center;
@@ -36,6 +36,8 @@ header .logo{
     font-size: 2em;
     text-transform:uppercase;
     letter-spacing: 2px;
+    border: 4px solid;
+    
 }
 header ul{
     display: flex;
@@ -44,6 +46,7 @@ header ul{
     border: 4px solid;
     justify-content: center;
     align-items:center;
+    margin-left: 40%;
     
 
 }
@@ -102,14 +105,24 @@ div{
     background: orange;
     border: 4px solid;
 }
+.sideNav{
+    visibility: hidden;
+}
 @media (max-width: 1000px) {
     header{
-       
+       padding: 0;
         display:flex;
         float: right;
     }
     header .logo{
+        position: relative;
         display: block;
+        float: left;
+        font-weight: 700;
+        font-size:x-large;
+        letter-spacing: 1px;
+        margin-top: 0;
+        border: 4px solid;
     }
     header .logo::after{
         justify-content: center;
@@ -117,9 +130,115 @@ div{
     header ul{
         display:block;
         justify-content: right;
-        margin-left: 10%;
+        margin-left: 40%;
         border: 4px solid;
-       
+        font-size: small;
+        float: right;
+    }
+    .sideNav{
+        visibility: hidden;
+    }
+    .navButton{
+        visibility: hidden;
+    }
+    
+}
+@media (max-width: 1200px) {
+    header{
+       padding: 0;
+        display:flex;
+        float: right;
+    }
+    header .logo{
+        position: relative;
+        display: block;
+        float: left;
+        font-weight: 700;
+        font-size:x-large;
+        letter-spacing: 1px;
+        margin-top: 0;
+        border: 4px solid;
+    }
+    header .logo::after{
+        justify-content: center;
+    }
+    header ul{
+        display:block;
+        justify-content: right;
+        margin-left: 0%;
+        border: 4px solid;
+        font-size: small;
+        float: right;
+    }
+    section img{
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: auto;
+    }
+    .sideNav{
+        visibility: hidden;
+    }
+    
+}
+@media (max-width: 900px) {
+    header{
+       padding: 0;
+        display:flex;
+        float: right;
+    }
+    header .logo{
+        position: relative;
+        display: block;
+        font-weight: 700;
+        font-size:x-large;
+        letter-spacing: 1px;
+        margin-top: 0;
+        float: right;
+        border: 4px solid;
+        order: 2;
+    }
+    header .logo::after{
+        justify-content: center;
+    }
+    header ul{
+        visibility: hidden;
+        display:block;
+        justify-content: right;
+        margin-left: 0%;
+        border: 4px solid;
+        font-size: small;
+        float: left;
+        order: 1;
+    }
+    .sideNav{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        visibility: visible;
+    }
+    .sideNav a{
+        display:block;
+        text-decoration: none;
+        padding: 8px 8px 8px 32px;
+        color: #818181;
+        transition: 1s;
+    }
+    .sideNav a:hover{
+        color:#f1f1f1;
+    }
+    .navButton{
+        visibility: visible;
+        font-size: 30px;
+        cursor: pointer;
     }
     
 }
