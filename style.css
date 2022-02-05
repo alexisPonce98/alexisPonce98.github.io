@@ -10,7 +10,8 @@
 body{
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(#2b1055,#7597de);
+    /* background: linear-gradient(#7597de,#2b1055, #0c0c0c); */
+    background: linear-gradient(#2b1055,#03194a);
 }
 /*Includes all containers in the tope of page, logo, options*/
 header{
@@ -83,6 +84,7 @@ section img{
     left: 0;
     width: 100%;
     height: auto;
+    visibility:hidden;
 }
 
 section img#Cover_photo{
@@ -106,19 +108,26 @@ p{
     font-style: italic;
     
 }
-
-div{
-    width: 100px;
-    height: 100px;
-    background: orange;
-}
 .sideNav{
     visibility: hidden;
 }
 .navButton{
     visibility: hidden;
 }
-
+.afterGradient{
+    box-sizing: border-box;
+    position: relative;
+    width: 100vw;
+    height: auto;
+}
+.afterGradient img{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    visibility: inherit;
+}
 /* setting for screen size smaller than 1000px */
 @media (max-width: 1000px) {
     header{
@@ -250,6 +259,10 @@ div{
     }
     .sideNav a:hover{
         color:#f1f1f1;
+    }
+    .sideNav .closbtn{
+        position:relative;
+        left: 70%;
     }
     .navButton{
         visibility: visible;
