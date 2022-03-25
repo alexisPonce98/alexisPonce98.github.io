@@ -64,8 +64,7 @@ header ul li a{
     color:#fff
 }
 /* actions for when the mouse hovers over the link */
-header ul li a:hover,
-header ul li a.active{
+header ul li a:hover{
     background: #fff;
     color: #2b1055;
     border-radius: 20px;
@@ -90,17 +89,50 @@ section img{
 section img#Cover_photo{
     /* makes the image blend with the background*/
     mix-blend-mode: screen;
-    
 }
 /* container with the welcome sign */
 #welcome{
-    position:absolute;
-    top: 9%;
-    left: 30%;
+    position:relative;
+    width: fit-content;
     color: #fff;
+    margin-top: 10vh;
+    margin-left: 30vw;
     white-space:nowrap;
     font-size: 7.5vw;
     z-index: 9;
+    padding: 0%;
+}
+section .hello{
+    position:relative;
+    /* top: 20%;
+    left: 25%; */
+    font-size: 4.5vw;
+    color: #fff;
+    margin-top: 1vh;
+    margin-left: 5vw;
+    margin-bottom: 0;
+    padding: 0%;
+    /* border: 4px black solid; */
+}
+section .myName{
+    position:relative;
+    /* top: 30%;
+    left: 25%; */
+    margin-left: 5vw;
+    color: #fff;
+    font-size: 10vw; 
+    /* border: 4px white solid; */
+    padding: 0%;
+}
+section .shortAbout{
+    position: relative;
+    width: 80vw;
+    color: #fff;
+    margin-left: 5vw;
+    display:flex;
+    font-size: 3vw;
+    padding: 0%;
+    /* border: 4px green solid; */
 }
 p{
     color:white;
@@ -119,6 +151,7 @@ p{
     position: relative;
     width: 100vw;
     height: auto;
+    visibility:hidden;
 }
 .afterGradient img{
     position:absolute;
@@ -127,6 +160,60 @@ p{
     width: 100vw;
     height: auto;
     visibility: inherit;
+}
+.About{
+    width: 100vw;
+    height: 100vh;
+}
+.About .Sign{
+    position: relative;
+    margin-top: 15vh;
+    margin-left: 5vw;
+    font-size: 10vw;
+    color: #fff;
+    text-decoration: underline solid #fff;
+}
+.About .first_About{
+    position: relative;
+    margin-left: 10vw;
+    font-size: 2vw;
+    color: #fff;
+    background-color: inherit;
+}
+.About .Second_About{
+    position: relative;
+    margin-top: 3vh;
+    margin-left: 10vw;
+    font-size: 2vw;
+    color: #fff;
+    background-color: inherit;
+}
+.About .Skills{
+    position: relative;
+    margin-left: 11vw;
+    margin-top: 2vh;
+    display:inline-flex;
+    color: #ccd6f6;
+}
+.About .Skills .Skills_list{
+    position: relative;
+    font-size: 2vw;
+    width: 30vw;
+}
+.About .Skills .Second_Skills_list{
+    position: relative;
+    font-size: 2vw;
+    width: 30vw;
+}
+
+.Resume{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.Resume .resume_src{
+    width:100vw;
+    height:auto
 }
 /* setting for screen size smaller than 1000px */
 @media (max-width: 1000px) {
@@ -142,16 +229,22 @@ p{
         font-weight: 700;
         font-size:x-large;
         letter-spacing: 1px;
-        margin-top: 0;
+        margin-top: 15px;
     }
     header .logo::after{
         justify-content: center;
     }
     header ul{
-        display:block;
+        display: inline;
         justify-content: right;
+
         margin-left: 40%;
         font-size: small;
+        float: right;
+        width:auto;
+    }
+    header ul li{
+        display: block;
         float: right;
     }
     .sideNav{
@@ -179,17 +272,20 @@ p{
         font-weight: 700;
         font-size:x-large;
         letter-spacing: 1px;
-        margin-top: 0;
+        margin-top: 10px;
     }
     header .logo::after{
         justify-content: center;
     }
     header ul{
-        display:block;
+        display:flex;
+        width: 100vw;
         justify-content: right;
+        margin-top: 10px;
         margin-left: 0%;
         font-size: small;
         float: right;
+        padding: 2%;
     }
     header ul li{
         display: block;
