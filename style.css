@@ -83,7 +83,7 @@ section img{
     left: 0;
     width: 100%;
     height: auto;
-    visibility:hidden;
+    visibility:visible;
 }
 
 section img#Cover_photo{
@@ -209,12 +209,41 @@ p{
 .Resume{
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: auto;
 }
 .Resume .resume_src{
     width:100vw;
-    height:auto
+    height: inherit;
 }
+
+.Contact{
+    position: relative;
+    width: 100vw;
+    height: 15vh;
+    background-color: inherit;
+    color: #fff ;
+}
+.Contact .email{
+    position: relative;
+    margin-top: 1vh;
+    margin-left: 10vw;
+}
+.Contact .linkedin{
+    position: relative;
+    margin-top: 1vh;
+    margin-left: 10vw;
+}
+.Contact .git{
+    position: relative;
+    margin-top: 1vh;
+    margin-left: 10vw;
+}
+
+.Contact .phone{
+    position: relative;
+    margin-left: 10vw;
+}
+
 /* setting for screen size smaller than 1000px */
 @media (max-width: 1000px) {
     header{
