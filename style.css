@@ -83,6 +83,8 @@ section img{
     left: 0;
     width: 100%;
     height: auto;
+    max-height: 100%;
+    object-fit:cover;
     visibility:visible;
 }
 
