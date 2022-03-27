@@ -6,6 +6,7 @@
    padding: 0;
    font-family: 'Poppins', sans-serif;
 }
+
 /* Covers the whole page */
 body{
     width: 100vw;
@@ -13,6 +14,7 @@ body{
     /* background: linear-gradient(#7597de,#2b1055, #0c0c0c); */
     background: linear-gradient(#2b1055,#03194a);
 }
+
 /*Includes all containers in the tope of page, logo, options*/
 header{
     position:absolute;
@@ -28,6 +30,7 @@ header{
     
     z-index: 1000;
 }
+
 /* the logo is my name */
 header .logo{
     position: absolute;
@@ -41,6 +44,7 @@ header .logo{
     letter-spacing: 2px;
     
 }
+
 /* list of options for the site */
 header ul{
     display: flex;
@@ -52,23 +56,27 @@ header ul{
     
 
 }
+
 /* individual objects inside the list */
 header ul li{
     list-style: none;
     margin-left: 20px;
 }
+
 /* actions for links inside the list */
 header ul li a{
     text-decoration:none;
     padding: 6px 50px;
     color:#fff
 }
+
 /* actions for when the mouse hovers over the link */
 header ul li a:hover{
     background: #fff;
     color: #2b1055;
     border-radius: 20px;
 }
+
 /* container for the image on the site  */
 section{
     box-sizing: border-box;
@@ -76,6 +84,7 @@ section{
     width: 100vw;
     height: 100vh;
 }
+
 /* object of image in section container */
 section img{
     position:absolute;
@@ -104,6 +113,8 @@ section img#Cover_photo{
     z-index: 9;
     padding: 0%;
 }
+
+/* my name is */
 section .hello{
     position:relative;
     /* top: 20%;
@@ -116,6 +127,8 @@ section .hello{
     padding: 0%;
     /* border: 4px black solid; */
 }
+
+/* Alexis Ponce */
 section .myName{
     position:relative;
     /* top: 30%;
@@ -126,6 +139,8 @@ section .myName{
     /* border: 4px white solid; */
     padding: 0%;
 }
+
+/* little about message */
 section .shortAbout{
     position: relative;
     width: 80vw;
@@ -136,12 +151,15 @@ section .shortAbout{
     padding: 0%;
     /* border: 4px green solid; */
 }
+
+/* for all paragraphs */
 p{
     color:white;
     background:red;
     font-style: italic;
     
 }
+
 .sideNav{
     visibility: hidden;
 }
@@ -260,7 +278,7 @@ p{
         font-weight: 700;
         font-size:x-large;
         letter-spacing: 1px;
-        margin-top: 15px;
+        margin-top: 6vh;
     }
     header .logo::after{
         justify-content: center;
@@ -303,7 +321,7 @@ p{
         font-weight: 700;
         font-size:x-large;
         letter-spacing: 1px;
-        margin-top: 10px;
+        margin-top: 5vh;
     }
     header .logo::after{
         justify-content: center;
@@ -348,7 +366,7 @@ p{
         font-weight: 700;
         font-size:x-large;
         letter-spacing: 1px;
-        margin-top: 15px;
+        margin-top: 5vh;
         float: right;
         order: 2;
     }
@@ -395,6 +413,57 @@ p{
         visibility: visible;
         font-size: 30px;
         cursor: pointer;
+    }
+
+    #welcome{
+        position:relative;
+        width: fit-content;
+        color: #fff;
+        margin-top: 10vh;
+        margin-left: 10vw;
+        white-space:nowrap;
+        font-size: 15vw;
+        z-index: 9;
+        padding: 0%;
+    }
+    
+    /* my name is */
+    section .hello{
+        position:relative;
+        /* top: 20%;
+        left: 25%; */
+        font-size: 8vw;
+        color: #fff;
+        margin-top: 1vh;
+        margin-left: 5vw;
+        margin-bottom: 0;
+        padding: 0%;
+        /* border: 4px black solid; */
+    }
+
+        /* Alexis Ponce */
+    section .myName{
+        position:relative;
+        /* top: 30%;
+        left: 25%; */
+        margin-left: 5vw;
+        color: #fff;
+        font-size: 14vw; 
+        max-width: 100%;
+        /* border: 4px white solid; */
+        padding: 0%;
+    }
+
+        /* little about message */
+    section .shortAbout{
+        position: relative;
+        width: 80vw;
+        color: #fff;
+        margin-left: 5vw;
+        display:flex;
+        font-size: 7vw;
+        padding: 0%;
+        /* border: 4px green solid; */
     }
     
 }
