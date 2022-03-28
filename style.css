@@ -17,7 +17,7 @@ body{
 
 /*Includes all containers in the tope of page, logo, options*/
 header{
-    position:absolute;
+    position:fixed;
     box-sizing: border-box;
     top: 0;
     left: 0;
@@ -27,7 +27,7 @@ header{
     display:flex;
     justify-content: space-between;
     align-items:center;
-    
+    background: inherit;
     z-index: 1000;
 }
 
