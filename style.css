@@ -39,7 +39,7 @@ header .logo{
     color: #fff;
     font-weight: 700;
     text-decoration:none;
-    font-size: 2em;
+    font-size: 2vw;
     text-transform:uppercase;
     letter-spacing: 2px;
     
@@ -53,8 +53,7 @@ header ul{
     justify-content: center;
     align-items:center;
     margin-left: 40%;
-    
-
+    font-size: 2vw;
 }
 
 /* individual objects inside the list */
@@ -119,7 +118,7 @@ section .hello{
     position:relative;
     /* top: 20%;
     left: 25%; */
-    font-size: 4.5vw;
+    font-size: 4vw;
     color: #fff;
     margin-top: 1vh;
     margin-left: 5vw;
@@ -135,7 +134,7 @@ section .myName{
     left: 25%; */
     margin-left: 5vw;
     color: #fff;
-    font-size: 10vw; 
+    font-size: 8vw; 
     /* border: 4px white solid; */
     padding: 0%;
 }
@@ -147,7 +146,7 @@ section .shortAbout{
     color: #fff;
     margin-left: 5vw;
     display:flex;
-    font-size: 3vw;
+    font-size: 2vw;
     padding: 0%;
     /* border: 4px green solid; */
 }
@@ -189,14 +188,14 @@ p{
     position: relative;
     margin-top: 15vh;
     margin-left: 5vw;
-    font-size: 10vw;
+    font-size: 6vw;
     color: #fff;
     text-decoration: underline solid #fff;
 }
 .About .first_About{
     position: relative;
     margin-left: 10vw;
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: #fff;
     background-color: inherit;
 }
@@ -204,7 +203,7 @@ p{
     position: relative;
     margin-top: 3vh;
     margin-left: 10vw;
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: #fff;
     background-color: inherit;
 }
@@ -217,12 +216,12 @@ p{
 }
 .About .Skills .Skills_list{
     position: relative;
-    font-size: 2vw;
+    font-size: 1.5vw;
     width: 30vw;
 }
 .About .Skills .Second_Skills_list{
     position: relative;
-    font-size: 2vw;
+    font-size: 1.5vw;
     width: 30vw;
 }
 
@@ -242,6 +241,7 @@ p{
     height: 15vh;
     background-color: inherit;
     color: #fff ;
+    font-size: 2vw;
 }
 .Contact .email{
     position: relative;
@@ -264,50 +264,7 @@ p{
     margin-left: 10vw;
 }
 
-/* setting for screen size smaller than 1000px */
-@media (max-width: 1000px) {
-    header{
-       padding: 0;
-        display:flex;
-        float: right;
-    }
-    header .logo{
-        position: relative;
-        display: block;
-        float: left;
-        font-weight: 700;
-        font-size:x-large;
-        letter-spacing: 1px;
-        margin-top: 6vh;
-    }
-    header .logo::after{
-        justify-content: center;
-    }
-    header ul{
-        display: inline;
-        justify-content: right;
-
-        margin-left: 40%;
-        font-size: small;
-        float: right;
-        width:auto;
-    }
-    header ul li{
-        display: block;
-        float: right;
-    }
-    .sideNav{
-        visibility: hidden;
-    }
-    .navButton{
-        visibility: hidden;
-    }
-    
-}
-
-
-/* setting for screen size smaller than 1200px */
-@media (max-width: 1200px) {
+@media all and (max-width: 2000px) {
     header{
        padding: 0;
         display:flex;
@@ -319,7 +276,7 @@ p{
         display: block;
         float: left;
         font-weight: 700;
-        font-size:x-large;
+        font-size: 2vw;
         letter-spacing: 1px;
         margin-top: 5vh;
     }
@@ -335,6 +292,7 @@ p{
         font-size: small;
         float: right;
         padding: 2%;
+        font-size: 2vw;
     }
     header ul li{
         display: block;
@@ -345,16 +303,454 @@ p{
         top: 0;
         left: 0;
         width: 100vw;
-        height: auto;
+        height: 100vh;
     }
     .sideNav{
         visibility: hidden;
     }
     
+    #welcome{
+        position:relative;
+        width: fit-content;
+        color: #fff;
+        margin-top: 10vh;
+        margin-left: 22vw;
+        margin-bottom: 0;
+        white-space:nowrap;
+        font-size: 10vw;
+        z-index: 9;
+        padding: 0%;
+    }
+
+    
+    /* my name is */
+    section .hello{
+        position:relative;
+        /* top: 20%;
+        left: 25%; */
+        font-size: 3vw;
+        color: #fff;
+        margin-top: 0vh;
+        margin-left: 5vw;
+        margin-bottom: 0;
+        padding: 0%;
+        /* border: 4px black solid; */
+    }
+
+        /* Alexis Ponce */
+    section .myName{
+        position:relative;
+        /* top: 30%;
+        left: 25%; */
+        margin-left: 5vw;
+        color: #fff;
+        font-size: 8vw; 
+        max-width: 100%;
+        /* border: 4px white solid; */
+        padding: 0%;
+    }
+
+        /* little about message */
+    section .shortAbout{
+        position: relative;
+        width: 80vw;
+        color: #fff;
+        margin-left: 5vw;
+        display:flex;
+        font-size: 3vw;
+        padding: 0%;
+        /* border: 4px green solid; */
+    }
+
+    section img{
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        max-height: 100%;
+        object-fit:cover;
+        visibility:visible;
+    }
+
+    .About{
+        width: 100vw;
+        height: 100vh;
+        font-size: 2vw;
+    }
+    
+    .About .Sign{
+        position: relative;
+        margin-top: 6vh;
+        margin-left: 5vw;
+        font-size: 8vw;
+        color: #fff;
+        text-decoration: underline solid #fff;
+    }
+    .About .first_About{
+        position: relative;
+        margin-left: 10vw;
+        font-size: 2vw;
+        color: #fff;
+        background-color: inherit;
+    }
+    .About .Second_About{
+        position: relative;
+        margin-top: 3vh;
+        margin-left: 10vw;
+        font-size: 2vw;
+        color: #fff;
+        background-color: inherit;
+    }
+    .About .Skills{
+        position: relative;
+        margin-left: 11vw;
+        margin-top: 2vh;
+        display:inline-flex;
+        color: #ccd6f6;
+    }
+    .About .Skills .Skills_list{
+        position: relative;
+        font-size: 2vw;
+        width: 30vw;
+    }
+    .About .Skills .Second_Skills_list{
+        position: relative;
+        font-size: 2vw;
+        width: 30vw;
+    }
+    
+    .Contact{
+        font-size: 3vw;
+    }
+}
+
+
+/* setting for screen size smaller than 1200px */
+@media all and (max-width: 1200px) {
+    header{
+       padding: 0;
+        display:flex;
+        float: right;
+        height:5%;
+    }
+    header .logo{
+        position: relative;
+        display: block;
+        float: left;
+        font-weight: 700;
+        font-size: 2vw;
+        letter-spacing: 1px;
+        margin-top: 5vh;
+    }
+    header .logo::after{
+        justify-content: center;
+    }
+    header ul{
+        display:flex;
+        width: 100vw;
+        justify-content: right;
+        margin-top: 10px;
+        margin-left: 0%;
+        font-size: small;
+        float: right;
+        padding: 2%;
+        font-size: 2vw;
+    }
+    header ul li{
+        display: block;
+        float: right;
+    }
+    section img{
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    .sideNav{
+        visibility: hidden;
+    }
+    
+    #welcome{
+        position:relative;
+        width: fit-content;
+        color: #fff;
+        margin-top: 10vh;
+        margin-left: 22vw;
+        margin-bottom: 0;
+        white-space:nowrap;
+        font-size: 10vw;
+        z-index: 9;
+        padding: 0%;
+    }
+
+    
+    /* my name is */
+    section .hello{
+        position:relative;
+        /* top: 20%;
+        left: 25%; */
+        font-size: 3vw;
+        color: #fff;
+        margin-top: 0vh;
+        margin-left: 5vw;
+        margin-bottom: 0;
+        padding: 0%;
+        /* border: 4px black solid; */
+    }
+
+        /* Alexis Ponce */
+    section .myName{
+        position:relative;
+        /* top: 30%;
+        left: 25%; */
+        margin-left: 5vw;
+        color: #fff;
+        font-size: 8vw; 
+        max-width: 100%;
+        /* border: 4px white solid; */
+        padding: 0%;
+    }
+
+        /* little about message */
+    section .shortAbout{
+        position: relative;
+        width: 80vw;
+        color: #fff;
+        margin-left: 5vw;
+        display:flex;
+        font-size: 3vw;
+        padding: 0%;
+        /* border: 4px green solid; */
+    }
+
+    section img{
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        max-height: 100%;
+        object-fit:cover;
+        visibility:visible;
+    }
+
+    .About{
+        width: 100vw;
+        height: 100vh;
+        font-size: 2vw;
+    }
+    
+    .About .Sign{
+        position: relative;
+        margin-top: 6vh;
+        margin-left: 5vw;
+        font-size: 8vw;
+        color: #fff;
+        text-decoration: underline solid #fff;
+    }
+    .About .first_About{
+        position: relative;
+        margin-left: 10vw;
+        font-size: 2vw;
+        color: #fff;
+        background-color: inherit;
+    }
+    .About .Second_About{
+        position: relative;
+        margin-top: 3vh;
+        margin-left: 10vw;
+        font-size: 2vw;
+        color: #fff;
+        background-color: inherit;
+    }
+    .About .Skills{
+        position: relative;
+        margin-left: 11vw;
+        margin-top: 2vh;
+        display:inline-flex;
+        color: #ccd6f6;
+    }
+    .About .Skills .Skills_list{
+        position: relative;
+        font-size: 2vw;
+        width: 30vw;
+    }
+    .About .Skills .Second_Skills_list{
+        position: relative;
+        font-size: 2vw;
+        width: 30vw;
+    }
+    
+    .Contact{
+        font-size: 3vw;
+    }
+}
+
+/* setting for screen size smaller than 1000px */
+@media all and (max-width: 1100px) {
+    header{
+       padding: 0;
+        display:flex;
+        float: right;
+    }
+    header .logo{
+        position: relative;
+        width:30vw;
+        display: inline;
+        float: left;
+        font-weight: 700;
+        font-size:x-large;
+        letter-spacing: 1px;
+        margin-top: 2vh;
+        /* border: 4px white solid; */
+    }
+    header .logo::after{
+        justify-content: center;
+    }
+    header ul{
+        display: flex;
+        justify-content: right;
+
+        margin-left: 14vw;
+        font-size: small;
+        float: right;
+        width:auto;
+        /* border: 4px green solid; */
+    }
+    header ul li{
+        display: block;
+        float: right;
+    }
+    .sideNav{
+        visibility: hidden;
+    }
+    .navButton{
+        visibility: hidden;
+    }
+
+    section{
+        margin-top: 5vh;
+    }
+
+    #welcome{
+        position:relative;
+        width: fit-content;
+        height: fit-content;
+        color: #fff;
+        margin-top: 0;
+        margin-left: 25vw;
+        white-space:nowrap;
+        font-size: 9vw;
+        z-index: 9;
+        padding: 0;
+        white-space: pre-line;
+        /* border: 4px green solid; */
+    }
+
+    
+    /* my name is */
+    section .hello{
+        position:relative;
+        /* top: 20%;
+        left: 25%; */
+        font-size: 3vw;
+        color: #fff;
+        margin-top: 0vh;
+        margin-left: 6vw;
+        margin-bottom: 0;
+        padding: 0%;
+        /* border: 4px black solid; */
+    }
+
+        /* Alexis Ponce */
+    section .myName{
+        position:relative;
+        /* top: 30%;
+        left: 25%; */
+        margin-left: 6vw;
+        margin-top: 0;
+        color: #fff;
+        font-size: 5vw; 
+        max-width: 100%;
+        /* border: 4px white solid; */
+        padding: 0%;
+    }
+
+        /* little about message */
+    section .shortAbout{
+        position: relative;
+        width: 80vw;
+        color: #fff;
+        margin-left: 5vw;
+        display:flex;
+        font-size: 3vw;
+        padding: 0%;
+        /* border: 4px green solid; */
+    }
+
+    section img{
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        max-height: 100%;
+        object-fit:cover;
+        visibility:visible;
+    }
+
+    .About{
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .About .Sign{
+        position: relative;
+        margin-top: 6vh;
+        margin-left: 5vw;
+        font-size: 8vw;
+        color: #fff;
+        text-decoration: underline solid #fff;
+    }
+    .About .first_About{
+        position: relative;
+        margin-left: 10vw;
+        font-size: 2.4vw;
+        color: #fff;
+        background-color: inherit;
+    }
+    .About .Second_About{
+        position: relative;
+        margin-top: 3vh;
+        margin-left: 10vw;
+        font-size: 2.4vw;
+        color: #fff;
+        background-color: inherit;
+    }
+    .About .Skills{
+        position: relative;
+        margin-left: 11vw;
+        margin-top: 2vh;
+        display:inline-flex;
+        color: #ccd6f6;
+    }
+    .About .Skills .Skills_list{
+        position: relative;
+        font-size: 2.4vw;
+        width: 30vw;
+    }
+    .About .Skills .Second_Skills_list{
+        position: relative;
+        font-size: 2.4vw;
+        width: 30vw;
+    }
+    
 }
 
 /* setting for screen size smaller than 900px */
-@media (max-width: 900px) {
+@media all and (max-width: 900px) {
     header{
        padding: 0;
         display:flex;
